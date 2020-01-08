@@ -1,0 +1,242 @@
+Running client...
+
+CC Alg 4
+g_done_timer 10000000000
+g_thread_cnt 4
+g_abort_penalty 10000000
+g_zipf_theta 0.300000
+g_node_id 11
+g_client_rem_thread_cnt 2
+g_client_send_thread_cnt 2
+g_max_txn_per_part 500000
+g_load_per_server 100
+g_inflight_max 100
+g_mpr 1.000000
+g_mpitem 0.010000
+g_part_per_txn 2
+g_req_per_query 10
+g_client_node_cnt 8
+g_rem_thread_cnt 4
+g_send_thread_cnt 4
+g_client_thread_cnt 4
+g_num_wh 2
+g_perc_payment 0.000000
+g_wh_update 1
+g_part_cnt 4
+g_node_cnt 4
+g_thread_cnt 4
+g_query_intvl 1
+g_prt_lat_distr 0
+g_part_alloc 0
+g_mem_pad 1
+g_perc_multi_part 1.000000
+g_tup_read_perc 1.000000
+g_tup_write_perc 0.000000
+g_txn_read_perc 1.000000
+g_txn_write_perc 0.000000
+g_synth_table_size 65536
+g_max_part_key 40000
+g_max_product_key 4000
+g_max_supplier_key 4000
+g_field_per_tuple 10
+g_data_perc 100.000000
+g_access_perc 0.030000
+g_strict_ppt 0
+g_network_delay 0
+g_total_thread_cnt 13
+g_total_client_thread_cnt 8
+g_total_node_cnt 12
+g_seq_batch_time_limit 5000000
+Node 11: servicing 1 total nodes starting with node 3
+Random seed: 94303355593294
+Initializing stats... Done
+Initializing transport manager... Tport Init 11: 26
+Reading ifconfig file: ./ifconfig.txt
+0: 172.23.12.121
+1: 172.23.12.123
+2: 172.23.12.124
+3: 172.23.12.127
+4: 172.23.12.121
+5: 172.23.12.123
+6: 172.23.12.124
+7: 172.23.12.127
+8: 172.23.12.121
+9: 172.23.12.123
+10: 172.23.12.124
+11: 172.23.12.127
+Port ID:  0, 0 -> 11 : 17132
+Sock Binding to tcp://172.23.12.127:17132 11
+Port ID:  1, 0 -> 11 : 17276
+Sock Binding to tcp://172.23.12.127:17276 11
+Port ID:  2, 0 -> 11 : 17420
+Sock Binding to tcp://172.23.12.127:17420 11
+Port ID:  3, 0 -> 11 : 17564
+Sock Binding to tcp://172.23.12.127:17564 11
+Port ID:  0, 11 -> 0 : 17011
+Sock Connecting to tcp://172.23.12.127;172.23.12.121:17011 11 -> 0
+Port ID:  1, 11 -> 0 : 17155
+Sock Connecting to tcp://172.23.12.127;172.23.12.121:17155 11 -> 0
+Port ID:  0, 1 -> 11 : 17133
+Sock Binding to tcp://172.23.12.127:17133 11
+Port ID:  1, 1 -> 11 : 17277
+Sock Binding to tcp://172.23.12.127:17277 11
+Port ID:  2, 1 -> 11 : 17421
+Sock Binding to tcp://172.23.12.127:17421 11
+Port ID:  3, 1 -> 11 : 17565
+Sock Binding to tcp://172.23.12.127:17565 11
+Port ID:  0, 11 -> 1 : 17023
+Sock Connecting to tcp://172.23.12.127;172.23.12.123:17023 11 -> 1
+Port ID:  1, 11 -> 1 : 17167
+Sock Connecting to tcp://172.23.12.127;172.23.12.123:17167 11 -> 1
+Port ID:  0, 2 -> 11 : 17134
+Sock Binding to tcp://172.23.12.127:17134 11
+Port ID:  1, 2 -> 11 : 17278
+Sock Binding to tcp://172.23.12.127:17278 11
+Port ID:  2, 2 -> 11 : 17422
+Sock Binding to tcp://172.23.12.127:17422 11
+Port ID:  3, 2 -> 11 : 17566
+Sock Binding to tcp://172.23.12.127:17566 11
+Port ID:  0, 11 -> 2 : 17035
+Sock Connecting to tcp://172.23.12.127;172.23.12.124:17035 11 -> 2
+Port ID:  1, 11 -> 2 : 17179
+Sock Connecting to tcp://172.23.12.127;172.23.12.124:17179 11 -> 2
+Port ID:  0, 3 -> 11 : 17135
+Sock Binding to tcp://172.23.12.127:17135 11
+Port ID:  1, 3 -> 11 : 17279
+Sock Binding to tcp://172.23.12.127:17279 11
+Port ID:  2, 3 -> 11 : 17423
+Sock Binding to tcp://172.23.12.127:17423 11
+Port ID:  3, 3 -> 11 : 17567
+Sock Binding to tcp://172.23.12.127:17567 11
+Port ID:  0, 11 -> 3 : 17047
+Sock Connecting to tcp://172.23.12.127;172.23.12.127:17047 11 -> 3
+Port ID:  1, 11 -> 3 : 17191
+Sock Connecting to tcp://172.23.12.127;172.23.12.127:17191 11 -> 3
+Port ID:  0, 4 -> 11 : 17136
+Sock Binding to tcp://172.23.12.127:17136 11
+Port ID:  1, 4 -> 11 : 17280
+Sock Binding to tcp://172.23.12.127:17280 11
+Port ID:  0, 11 -> 4 : 17059
+Sock Connecting to tcp://172.23.12.127;172.23.12.121:17059 11 -> 4
+Port ID:  1, 11 -> 4 : 17203
+Sock Connecting to tcp://172.23.12.127;172.23.12.121:17203 11 -> 4
+Port ID:  0, 5 -> 11 : 17137
+Sock Binding to tcp://172.23.12.127:17137 11
+Port ID:  1, 5 -> 11 : 17281
+Sock Binding to tcp://172.23.12.127:17281 11
+Port ID:  0, 11 -> 5 : 17071
+Sock Connecting to tcp://172.23.12.127;172.23.12.123:17071 11 -> 5
+Port ID:  1, 11 -> 5 : 17215
+Sock Connecting to tcp://172.23.12.127;172.23.12.123:17215 11 -> 5
+Port ID:  0, 6 -> 11 : 17138
+Sock Binding to tcp://172.23.12.127:17138 11
+Port ID:  1, 6 -> 11 : 17282
+Sock Binding to tcp://172.23.12.127:17282 11
+Port ID:  0, 11 -> 6 : 17083
+Sock Connecting to tcp://172.23.12.127;172.23.12.124:17083 11 -> 6
+Port ID:  1, 11 -> 6 : 17227
+Sock Connecting to tcp://172.23.12.127;172.23.12.124:17227 11 -> 6
+Port ID:  0, 7 -> 11 : 17139
+Sock Binding to tcp://172.23.12.127:17139 11
+Port ID:  1, 7 -> 11 : 17283
+Sock Binding to tcp://172.23.12.127:17283 11
+Port ID:  0, 11 -> 7 : 17095
+Sock Connecting to tcp://172.23.12.127;172.23.12.127:17095 11 -> 7
+Port ID:  1, 11 -> 7 : 17239
+Sock Connecting to tcp://172.23.12.127;172.23.12.127:17239 11 -> 7
+Port ID:  0, 8 -> 11 : 17140
+Sock Binding to tcp://172.23.12.127:17140 11
+Port ID:  1, 8 -> 11 : 17284
+Sock Binding to tcp://172.23.12.127:17284 11
+Port ID:  0, 11 -> 8 : 17107
+Sock Connecting to tcp://172.23.12.127;172.23.12.121:17107 11 -> 8
+Port ID:  1, 11 -> 8 : 17251
+Sock Connecting to tcp://172.23.12.127;172.23.12.121:17251 11 -> 8
+Port ID:  0, 9 -> 11 : 17141
+Sock Binding to tcp://172.23.12.127:17141 11
+Port ID:  1, 9 -> 11 : 17285
+Sock Binding to tcp://172.23.12.127:17285 11
+Port ID:  0, 11 -> 9 : 17119
+Sock Connecting to tcp://172.23.12.127;172.23.12.123:17119 11 -> 9
+Port ID:  1, 11 -> 9 : 17263
+Sock Connecting to tcp://172.23.12.127;172.23.12.123:17263 11 -> 9
+Port ID:  0, 10 -> 11 : 17142
+Sock Binding to tcp://172.23.12.127:17142 11
+Port ID:  1, 10 -> 11 : 17286
+Sock Binding to tcp://172.23.12.127:17286 11
+Port ID:  0, 11 -> 10 : 17131
+Sock Connecting to tcp://172.23.12.127;172.23.12.124:17131 11 -> 10
+Port ID:  1, 11 -> 10 : 17275
+Sock Connecting to tcp://172.23.12.127;172.23.12.124:17275 11 -> 10
+Done
+Initializing client manager... workload initialized!
+Initializing simulation... Done
+Done
+Initializing work queue... Done
+Initializing msg pool... Done
+Initializing message queue... Done
+Initializing client query queue... Done
+Initialization Time = 997170075
+Setup 11:0
+Setup 11:1
+Setup 11:2
+Setup 11:3
+Setup 11:4
+Setup 11:6
+Setup 11:5
+Setup 11:7
+Send INIT_DONE to 0
+Send INIT_DONE to 1
+Send INIT_DONE to 2
+Send INIT_DONE to 3
+Send INIT_DONE to 4
+Send INIT_DONE to 5
+Send INIT_DONE to 6
+Send INIT_DONE to 7
+Send INIT_DONE to 8
+Send INIT_DONE to 9
+Send INIT_DONE to 10
+Running 11:0
+Running 11:1
+Running 11:2
+Running 11:3
+Received INIT_DONE from node 6
+Received INIT_DONE from node 2
+Received INIT_DONE from node 0
+Received INIT_DONE from node 4
+Received INIT_DONE from node 7
+Received INIT_DONE from node 3
+Received INIT_DONE from node 8
+Received INIT_DONE from node 5
+Received INIT_DONE from node 9
+Received INIT_DONE from node 10
+Received INIT_DONE from node 1
+Running 11:7
+Running 11:5
+Running 11:4
+Running 11:6
+Starttime set to 94304355817266
+Running ClientThread 0
+Running OutputThread 7
+Running OutputThread 6
+Running InputThread 4
+Running InputThread 5
+Running ClientThread 2
+Running ClientThread 1
+Running ClientThread 3
+[prog] total_runtime=10.007116,tput=3.997156,txn_cnt=40,txn_sent_cnt=42,txn_run_time=4.459966,txn_run_avg_time=0.111499,cl_send_intv=0.017556,msg_queue_delay_time=0.000311,msg_queue_cnt=42,msg_queue_enq_cnt=42,msg_queue_delay_time_avg=0.000007,msg_send_time=0.000222,msg_send_time_avg=0.000005,msg_recv_time=0.000292,msg_recv_time_avg=0.000007,msg_recv_idle_time=0.009644,msg_batch_cnt=42,msg_batch_size_msgs=42,msg_batch_size_msgs_avg=1.000000,msg_batch_size_bytes=16056,msg_batch_size_bytes_avg=382.000000,msg_batch_size_bytes_to_server=16056,msg_batch_size_bytes_to_client=0,msg_send_cnt=42,msg_recv_cnt=40,msg_unpack_time=0.000024,msg_unpack_time_avg=0.000001,mbuf_send_intv_time=0.000004,mbuf_send_intv_time_avg=0.000000,msg_copy_output_time=0.000023,virt_mem_usage=569088,phys_mem_usage=477492,cpu_ttl=0.000162
+tif_node0=100, 
+FINISH 11:7
+Txns sent to node 3: 3179
+FINISH 11:4
+Txns sent to node 3: 3133
+FINISH 11:3
+Txns sent to node 3: 3383
+FINISH 11:2
+FINISH 11:5
+FINISH 11:6
+Txns sent to node 3: 3418
+FINISH 11:0
+FINISH 11:1
+CLIENT PASS! SimTime = 20003403125
+[summary] total_runtime=10.000010,tput=532.599462,txn_cnt=5326,txn_sent_cnt=5328,txn_run_time=667.069667,txn_run_avg_time=0.125248,cl_send_intv=27.258214,msg_queue_delay_time=0.044147,msg_queue_cnt=5328,msg_queue_enq_cnt=5328,msg_queue_delay_time_avg=0.000008,msg_send_time=0.031829,msg_send_time_avg=0.000006,msg_recv_time=0.086515,msg_recv_time_avg=0.000016,msg_recv_idle_time=17.145429,msg_batch_cnt=5328,msg_batch_size_msgs=5328,msg_batch_size_msgs_avg=1.000000,msg_batch_size_bytes=2036616,msg_batch_size_bytes_avg=382.000000,msg_batch_size_bytes_to_server=2036616,msg_batch_size_bytes_to_client=0,msg_send_cnt=5328,msg_recv_cnt=5326,msg_unpack_time=0.005282,msg_unpack_time_avg=0.000001,mbuf_send_intv_time=0.000414,mbuf_send_intv_time_avg=0.000000,msg_copy_output_time=0.002728,ccl0=0.000697,ccl1=0.006687,ccl10=0.031745,ccl25=0.059697,ccl50=0.106234,ccl75=0.170468,ccl90=0.247650,ccl95=0.300561,ccl96=0.315344,ccl97=0.335814,ccl98=0.355362,ccl99=0.393134,ccl100=0.603033,virt_mem_usage=536304,phys_mem_usage=473456,cpu_ttl=52.372779

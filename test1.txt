@@ -1,0 +1,314 @@
+CC Alg 4
+g_done_timer 10000000000
+g_thread_cnt 4
+g_abort_penalty 10000000
+g_zipf_theta 0.300000
+g_node_id 3
+g_client_rem_thread_cnt 2
+g_client_send_thread_cnt 2
+g_max_txn_per_part 500000
+g_load_per_server 100
+g_inflight_max 100
+g_mpr 1.000000
+g_mpitem 0.010000
+g_part_per_txn 2
+g_req_per_query 10
+g_client_node_cnt 8
+g_rem_thread_cnt 4
+g_send_thread_cnt 4
+g_client_thread_cnt 4
+g_num_wh 2
+g_perc_payment 0.000000
+g_wh_update 1
+g_part_cnt 4
+g_node_cnt 4
+g_thread_cnt 4
+g_query_intvl 1
+g_prt_lat_distr 0
+g_part_alloc 0
+g_mem_pad 1
+g_perc_multi_part 1.000000
+g_tup_read_perc 1.000000
+g_tup_write_perc 0.000000
+g_txn_read_perc 1.000000
+g_txn_write_perc 0.000000
+g_synth_table_size 65536
+g_max_part_key 40000
+g_max_product_key 4000
+g_max_supplier_key 4000
+g_field_per_tuple 10
+g_data_perc 100.000000
+g_access_perc 0.030000
+g_strict_ppt 0
+g_network_delay 0
+g_total_thread_cnt 13
+g_total_client_thread_cnt 8
+g_total_node_cnt 12
+g_seq_batch_time_limit 5000000
+Random seed: 94303355396711
+Initializing stats... Done
+Initializing global manager... Done
+Initializing transport manager... Tport Init 3: 26
+Reading ifconfig file: ./ifconfig.txt
+0: 172.23.12.121
+1: 172.23.12.123
+2: 172.23.12.124
+3: 172.23.12.127
+4: 172.23.12.121
+5: 172.23.12.123
+6: 172.23.12.124
+7: 172.23.12.127
+8: 172.23.12.121
+9: 172.23.12.123
+10: 172.23.12.124
+11: 172.23.12.127
+Port ID:  0, 0 -> 3 : 17036
+Sock Binding to tcp://172.23.12.127:17036 3
+Port ID:  1, 0 -> 3 : 17180
+Sock Binding to tcp://172.23.12.127:17180 3
+Port ID:  2, 0 -> 3 : 17324
+Sock Binding to tcp://172.23.12.127:17324 3
+Port ID:  3, 0 -> 3 : 17468
+Sock Binding to tcp://172.23.12.127:17468 3
+Port ID:  0, 3 -> 0 : 17003
+Sock Connecting to tcp://172.23.12.127;172.23.12.121:17003 3 -> 0
+Port ID:  1, 3 -> 0 : 17147
+Sock Connecting to tcp://172.23.12.127;172.23.12.121:17147 3 -> 0
+Port ID:  2, 3 -> 0 : 17291
+Sock Connecting to tcp://172.23.12.127;172.23.12.121:17291 3 -> 0
+Port ID:  3, 3 -> 0 : 17435
+Sock Connecting to tcp://172.23.12.127;172.23.12.121:17435 3 -> 0
+Port ID:  0, 1 -> 3 : 17037
+Sock Binding to tcp://172.23.12.127:17037 3
+Port ID:  1, 1 -> 3 : 17181
+Sock Binding to tcp://172.23.12.127:17181 3
+Port ID:  2, 1 -> 3 : 17325
+Sock Binding to tcp://172.23.12.127:17325 3
+Port ID:  3, 1 -> 3 : 17469
+Sock Binding to tcp://172.23.12.127:17469 3
+Port ID:  0, 3 -> 1 : 17015
+Sock Connecting to tcp://172.23.12.127;172.23.12.123:17015 3 -> 1
+Port ID:  1, 3 -> 1 : 17159
+Sock Connecting to tcp://172.23.12.127;172.23.12.123:17159 3 -> 1
+Port ID:  2, 3 -> 1 : 17303
+Sock Connecting to tcp://172.23.12.127;172.23.12.123:17303 3 -> 1
+Port ID:  3, 3 -> 1 : 17447
+Sock Connecting to tcp://172.23.12.127;172.23.12.123:17447 3 -> 1
+Port ID:  0, 2 -> 3 : 17038
+Sock Binding to tcp://172.23.12.127:17038 3
+Port ID:  1, 2 -> 3 : 17182
+Sock Binding to tcp://172.23.12.127:17182 3
+Port ID:  2, 2 -> 3 : 17326
+Sock Binding to tcp://172.23.12.127:17326 3
+Port ID:  3, 2 -> 3 : 17470
+Sock Binding to tcp://172.23.12.127:17470 3
+Port ID:  0, 3 -> 2 : 17027
+Sock Connecting to tcp://172.23.12.127;172.23.12.124:17027 3 -> 2
+Port ID:  1, 3 -> 2 : 17171
+Sock Connecting to tcp://172.23.12.127;172.23.12.124:17171 3 -> 2
+Port ID:  2, 3 -> 2 : 17315
+Sock Connecting to tcp://172.23.12.127;172.23.12.124:17315 3 -> 2
+Port ID:  3, 3 -> 2 : 17459
+Sock Connecting to tcp://172.23.12.127;172.23.12.124:17459 3 -> 2
+Port ID:  0, 4 -> 3 : 17040
+Sock Binding to tcp://172.23.12.127:17040 3
+Port ID:  1, 4 -> 3 : 17184
+Sock Binding to tcp://172.23.12.127:17184 3
+Port ID:  0, 3 -> 4 : 17051
+Sock Connecting to tcp://172.23.12.127;172.23.12.121:17051 3 -> 4
+Port ID:  1, 3 -> 4 : 17195
+Sock Connecting to tcp://172.23.12.127;172.23.12.121:17195 3 -> 4
+Port ID:  2, 3 -> 4 : 17339
+Sock Connecting to tcp://172.23.12.127;172.23.12.121:17339 3 -> 4
+Port ID:  3, 3 -> 4 : 17483
+Sock Connecting to tcp://172.23.12.127;172.23.12.121:17483 3 -> 4
+Port ID:  0, 5 -> 3 : 17041
+Sock Binding to tcp://172.23.12.127:17041 3
+Port ID:  1, 5 -> 3 : 17185
+Sock Binding to tcp://172.23.12.127:17185 3
+Port ID:  0, 3 -> 5 : 17063
+Sock Connecting to tcp://172.23.12.127;172.23.12.123:17063 3 -> 5
+Port ID:  1, 3 -> 5 : 17207
+Sock Connecting to tcp://172.23.12.127;172.23.12.123:17207 3 -> 5
+Port ID:  2, 3 -> 5 : 17351
+Sock Connecting to tcp://172.23.12.127;172.23.12.123:17351 3 -> 5
+Port ID:  3, 3 -> 5 : 17495
+Sock Connecting to tcp://172.23.12.127;172.23.12.123:17495 3 -> 5
+Port ID:  0, 6 -> 3 : 17042
+Sock Binding to tcp://172.23.12.127:17042 3
+Port ID:  1, 6 -> 3 : 17186
+Sock Binding to tcp://172.23.12.127:17186 3
+Port ID:  0, 3 -> 6 : 17075
+Sock Connecting to tcp://172.23.12.127;172.23.12.124:17075 3 -> 6
+Port ID:  1, 3 -> 6 : 17219
+Sock Connecting to tcp://172.23.12.127;172.23.12.124:17219 3 -> 6
+Port ID:  2, 3 -> 6 : 17363
+Sock Connecting to tcp://172.23.12.127;172.23.12.124:17363 3 -> 6
+Port ID:  3, 3 -> 6 : 17507
+Sock Connecting to tcp://172.23.12.127;172.23.12.124:17507 3 -> 6
+Port ID:  0, 7 -> 3 : 17043
+Sock Binding to tcp://172.23.12.127:17043 3
+Port ID:  1, 7 -> 3 : 17187
+Sock Binding to tcp://172.23.12.127:17187 3
+Port ID:  0, 3 -> 7 : 17087
+Sock Connecting to tcp://172.23.12.127;172.23.12.127:17087 3 -> 7
+Port ID:  1, 3 -> 7 : 17231
+Sock Connecting to tcp://172.23.12.127;172.23.12.127:17231 3 -> 7
+Port ID:  2, 3 -> 7 : 17375
+Sock Connecting to tcp://172.23.12.127;172.23.12.127:17375 3 -> 7
+Port ID:  3, 3 -> 7 : 17519
+Sock Connecting to tcp://172.23.12.127;172.23.12.127:17519 3 -> 7
+Port ID:  0, 8 -> 3 : 17044
+Sock Binding to tcp://172.23.12.127:17044 3
+Port ID:  1, 8 -> 3 : 17188
+Sock Binding to tcp://172.23.12.127:17188 3
+Port ID:  0, 3 -> 8 : 17099
+Sock Connecting to tcp://172.23.12.127;172.23.12.121:17099 3 -> 8
+Port ID:  1, 3 -> 8 : 17243
+Sock Connecting to tcp://172.23.12.127;172.23.12.121:17243 3 -> 8
+Port ID:  2, 3 -> 8 : 17387
+Sock Connecting to tcp://172.23.12.127;172.23.12.121:17387 3 -> 8
+Port ID:  3, 3 -> 8 : 17531
+Sock Connecting to tcp://172.23.12.127;172.23.12.121:17531 3 -> 8
+Port ID:  0, 9 -> 3 : 17045
+Sock Binding to tcp://172.23.12.127:17045 3
+Port ID:  1, 9 -> 3 : 17189
+Sock Binding to tcp://172.23.12.127:17189 3
+Port ID:  0, 3 -> 9 : 17111
+Sock Connecting to tcp://172.23.12.127;172.23.12.123:17111 3 -> 9
+Port ID:  1, 3 -> 9 : 17255
+Sock Connecting to tcp://172.23.12.127;172.23.12.123:17255 3 -> 9
+Port ID:  2, 3 -> 9 : 17399
+Sock Connecting to tcp://172.23.12.127;172.23.12.123:17399 3 -> 9
+Port ID:  3, 3 -> 9 : 17543
+Sock Connecting to tcp://172.23.12.127;172.23.12.123:17543 3 -> 9
+Port ID:  0, 10 -> 3 : 17046
+Sock Binding to tcp://172.23.12.127:17046 3
+Port ID:  1, 10 -> 3 : 17190
+Sock Binding to tcp://172.23.12.127:17190 3
+Port ID:  0, 3 -> 10 : 17123
+Sock Connecting to tcp://172.23.12.127;172.23.12.124:17123 3 -> 10
+Port ID:  1, 3 -> 10 : 17267
+Sock Connecting to tcp://172.23.12.127;172.23.12.124:17267 3 -> 10
+Port ID:  2, 3 -> 10 : 17411
+Sock Connecting to tcp://172.23.12.127;172.23.12.124:17411 3 -> 10
+Port ID:  3, 3 -> 10 : 17555
+Sock Connecting to tcp://172.23.12.127;172.23.12.124:17555 3 -> 10
+Port ID:  0, 11 -> 3 : 17047
+Sock Binding to tcp://172.23.12.127:17047 3
+Port ID:  1, 11 -> 3 : 17191
+Sock Binding to tcp://172.23.12.127:17191 3
+Port ID:  0, 3 -> 11 : 17135
+Sock Connecting to tcp://172.23.12.127;172.23.12.127:17135 3 -> 11
+Port ID:  1, 3 -> 11 : 17279
+Sock Connecting to tcp://172.23.12.127;172.23.12.127:17279 3 -> 11
+Port ID:  2, 3 -> 11 : 17423
+Sock Connecting to tcp://172.23.12.127;172.23.12.127:17423 3 -> 11
+Port ID:  3, 3 -> 11 : 17567
+Sock Connecting to tcp://172.23.12.127;172.23.12.127:17567 3 -> 11
+Done
+Initializing simulation... Done
+Initializing schema... Index init with 16384 buckets
+Done
+Initializing table... Thd 2 inserted 2048 keys
+Thd 5 inserted 2048 keys
+Thd 1 inserted 2048 keys
+Thd 3 inserted 2048 keys
+Thd 4 inserted 2048 keys
+Thd 7 inserted 2048 keys
+Thd 6 inserted 2048 keys
+Thd 0 inserted 2048 keys
+Done
+Workload initialized!
+Initializing work queue... Done
+Initializing abort queue... Done
+Initializing message queue... Done
+Initializing transaction manager pool... Done
+Initializing transaction pool... Done
+Initializing row pool... Done
+Initializing access pool... Done
+Initializing txn node table pool... Done
+Initializing query pool... Done
+Initializing msg pool... Done
+Initializing transaction table... Done
+Initialization Time = 151913710
+Setup 3:0
+Setup 3:1
+Setup 3:3
+Setup 3:2
+Setup 3:5
+Setup 3:6
+Setup 3:4
+Setup 3:8
+Setup 3:7
+Setup 3:9
+Setup 3:11
+Setup 3:10
+Setup 3:12
+Running 3:1
+Running 3:3
+Send INIT_DONE to 0
+Send INIT_DONE to 1
+Send INIT_DONE to 2
+Send INIT_DONE to 4
+Send INIT_DONE to 5
+Send INIT_DONE to 6
+Send INIT_DONE to 7
+Send INIT_DONE to 8
+Send INIT_DONE to 9
+Send INIT_DONE to 10
+Send INIT_DONE to 11
+Running 3:0
+Running 3:12
+Running 3:2
+Received INIT_DONE from node 4
+Received INIT_DONE from node 8
+Received INIT_DONE from node 6
+Received INIT_DONE from node 10
+Received INIT_DONE from node 9
+Received INIT_DONE from node 1
+Received INIT_DONE from node 2
+Received INIT_DONE from node 0
+Received INIT_DONE from node 5
+Received INIT_DONE from node 7
+Received INIT_DONE from node 11
+Running 3:6
+Running 3:5
+Running 3:8
+Running 3:4
+Running 3:10
+Running 3:7
+Running 3:11
+Running 3:9
+Starttime set to 94304354210004
+Running OutputThread 8
+Running OutputThread 10
+Running WorkerThread 0
+Running WorkerThread 3
+Running OutputThread 11
+Running InputThread 6
+Running InputThread 4
+Running OutputThread 9
+Running InputThread 5
+Running WorkerThread 1
+Running AbortThread 12
+Running WorkerThread 2
+Running InputThread 7
+[prog] total_runtime=10.000003,tput=0.100000,txn_cnt=1,remote_txn_cnt=0,local_txn_cnt=0,local_txn_start_cnt=0,total_txn_commit_cnt=2,local_txn_commit_cnt=1,remote_txn_commit_cnt=1,total_txn_abort_cnt=0,unique_txn_abort_cnt=0,local_txn_abort_cnt=0,remote_txn_abort_cnt=0,txn_run_time=0.134471,txn_run_avg_time=0.134471,multi_part_txn_cnt=1,multi_part_txn_run_time=0.134471,multi_part_txn_avg_time=0.134471,single_part_txn_cnt=0,single_part_txn_run_time=0.000000,single_part_txn_avg_time=0.000000,txn_write_cnt=0,record_write_cnt=0,parts_touched=4,avg_parts_touched=4.000000,ts_alloc_time=0.000000,abort_time=0.000000,txn_manager_time=0.000005,txn_index_time=0.000000,txn_validate_time=0.000000,txn_cleanup_time=0.000001,txn_total_process_time=0.000012,txn_process_time=0.000012,txn_total_local_wait_time=0.000000,txn_local_wait_time=0.000000,txn_total_remote_wait_time=0.134455,txn_remote_wait_time=0.134455,txn_total_twopc_time=0.000000,txn_twopc_time=0.000000,txn_total_process_time_avg=0.000012,txn_process_time_avg=0.000012,txn_total_local_wait_time_avg=0.000000,txn_local_wait_time_avg=0.000000,txn_total_remote_wait_time_avg=0.134455,txn_remote_wait_time_avg=0.134455,txn_total_twopc_time_avg=0.000000,txn_twopc_time_avg=0.000000,abort_queue_enqueue_cnt=0,abort_queue_dequeue_cnt=0,abort_queue_enqueue_time=0.000000,abort_queue_dequeue_time=0.000000,abort_queue_penalty=0.000000,abort_queue_penalty_extra=0.000000,abort_queue_penalty_avg=0.000000,abort_queue_penalty_extra_avg=0.000000,work_queue_wait_time=0.000005,work_queue_cnt=4,work_queue_enq_cnt=5,work_queue_wait_avg_time=0.000001,work_queue_mtx_wait_time=0.000000,work_queue_mtx_wait_avg=0.000000,work_queue_new_cnt=0,work_queue_new_wait_time=0.000000,work_queue_new_wait_avg_time=0.000000,work_queue_old_cnt=4,work_queue_old_wait_time=0.000005,work_queue_old_wait_avg_time=0.000001,work_queue_enqueue_time=0.000003,work_queue_dequeue_time=0.000004,work_queue_conflict_cnt=0,worker_idle_time=0.000139,worker_activate_txn_time=0.000000,worker_deactivate_txn_time=0.000000,worker_release_msg_time=0.000000,worker_process_time=0.000019,worker_process_cnt=3,worker_process_avg_time=0.000006,proc_cnt_type0=0,proc_time_type0=0.000000,proc_cnt_type1=0,proc_time_type1=0.000000,proc_cnt_type2=0,proc_time_type2=0.000000,proc_cnt_type3=0,proc_time_type3=0.000000,proc_cnt_type4=2,proc_time_type4=0.000007,proc_cnt_type5=0,proc_time_type5=0.000000,proc_cnt_type6=0,proc_time_type6=0.000000,proc_cnt_type7=0,proc_time_type7=0.000000,proc_cnt_type8=0,proc_time_type8=0.000000,proc_cnt_type9=1,proc_time_type9=0.000012,proc_cnt_type10=0,proc_time_type10=0.000000,proc_cnt_type11=0,proc_time_type11=0.000000,proc_cnt_type12=0,proc_time_type12=0.000000,proc_cnt_type13=0,proc_time_type13=0.000000,proc_cnt_type14=0,proc_time_type14=0.000000,proc_cnt_type15=0,proc_time_type15=0.000000,proc_cnt_type16=0,proc_time_type16=0.000000,proc_cnt_type17=0,proc_time_type17=0.000000,proc_cnt_type18=0,proc_time_type18=0.000000,proc_cnt_type19=0,proc_time_type19=0.000000,proc_cnt_type20=0,proc_time_type20=0.000000,proc_cnt_type21=0,proc_time_type21=0.000000,proc_cnt_type22=0,proc_time_type22=0.000000,proc_cnt_type23=0,proc_time_type23=0.000000,proc_cnt_type24=0,proc_time_type24=0.000000,msg_queue_delay_time=0.000008,msg_queue_cnt=8,msg_queue_enq_cnt=6,msg_queue_delay_time_avg=0.000001,msg_send_time=0.000051,msg_send_time_avg=0.000006,msg_recv_time=0.000087,msg_recv_time_avg=0.000017,msg_recv_idle_time=0.000144,msg_batch_cnt=9,msg_batch_size_msgs=9,msg_batch_size_msgs_avg=1.000000,msg_batch_size_bytes=895,msg_batch_size_bytes_avg=99.000000,msg_batch_size_bytes_to_server=799,msg_batch_size_bytes_to_client=96,msg_send_cnt=9,msg_recv_cnt=5,msg_unpack_time=0.000003,msg_unpack_time_avg=0.000001,mbuf_send_intv_time=0.000001,mbuf_send_intv_time_avg=0.000000,msg_copy_output_time=0.000001,cc_conflict_cnt=0,txn_wait_cnt=0,txn_conflict_cnt=0,twopl_already_owned_cnt=0,twopl_owned_cnt=0,twopl_sh_owned_cnt=0,twopl_ex_owned_cnt=0,twopl_sh_bypass_cnt=0,twopl_owned_time=0.000000,twopl_sh_owned_time=0.000000,twopl_ex_owned_time=0.000000,twopl_sh_owned_avg_time=0.000000,twopl_ex_owned_avg_time=0.000000,twopl_diff_time=0.000000,twopl_wait_time=0.000000,twopl_getlock_cnt=0,twopl_getlock_time=0.000000,twopl_release_cnt=0,twopl_release_time=0.000000,seq_txn_cnt=0,seq_batch_cnt=0,seq_full_batch_cnt=0,seq_ack_time=0.000000,seq_batch_time=0.000000,seq_process_cnt=0,seq_complete_cnt=0,seq_process_time=0.000000,seq_prep_time=0.000000,seq_idle_time=0.000000,seq_queue_wait_time=0.000000,seq_queue_cnt=0,seq_queue_enq_cnt=0,seq_queue_wait_avg_time=0.000000,seq_queue_enqueue_time=0.000000,seq_queue_dequeue_time=0.000000,sched_queue_wait_time=0.000000,sched_queue_cnt=0,sched_queue_enq_cnt=0,sched_queue_wait_avg_time=0.000000,sched_queue_enqueue_time=0.000000,sched_queue_dequeue_time=0.000000,calvin_sched_time=0.000000,sched_idle_time=0.000000,sched_txn_table_time=0.000000,sched_epoch_cnt=0,sched_epoch_diff=0.000000,occ_validate_time=0.000000,occ_cs_wait_time=0.000000,occ_cs_time=0.000000,occ_hist_validate_time=0.000000,occ_act_validate_time=0.000000,occ_hist_validate_fail_time=0.000000,occ_act_validate_fail_time=0.000000,occ_check_cnt=0,occ_abort_check_cnt=0,occ_ts_abort_cnt=0,occ_finish_time=0.000000,maat_validate_cnt=0,maat_validate_time=0.000000,maat_validate_avg=0.000000,maat_cs_wait_time=0.000000,maat_cs_wait_avg=0.000000,maat_case1_cnt=0,maat_case2_cnt=0,maat_case3_cnt=0,maat_case4_cnt=0,maat_case5_cnt=0,maat_range=0.000000,maat_commit_cnt=0,maat_commit_avg=0,maat_range_avg=0.000000,log_write_cnt=0,log_write_time=0.000000,log_write_avg_time=0.000000,log_flush_cnt=0,log_flush_time=0.000000,log_flush_avg_time=0.000000,log_process_time=0.000000,txn_table_new_cnt=2,txn_table_get_cnt=5,txn_table_release_cnt=1,txn_table_cflt_cnt=2,txn_table_cflt_size=13,txn_table_get_time=0.000006,txn_table_release_time=0.000003,txn_table_min_ts_time=0.000000,txn_table_get_avg_time=0.000001,txn_table_release_avg_time=0.000003,mtx0=0.000002,mtx1=0.000004,mtx2=0.000000,mtx3=0.000003,mtx4=0.000071,mtx5=0.000013,mtx6=0.000000,mtx7=0.000000,mtx8=0.000000,mtx9=0.000176,mtx10=0.000065,mtx11=0.000106,mtx12=0.000053,mtx13=0.000003,mtx14=0.000094,mtx15=0.000000,mtx16=0.000001,mtx17=0.000000,mtx18=0.000000,mtx19=0.000000,mtx20=0.000001,mtx21=0.000000,mtx22=0.000003,mtx23=0.000000,mtx24=0.000000,mtx25=0.000000,mtx26=0.000006,mtx27=0.000000,mtx28=0.000237,mtx29=0.000005,mtx30=0.000000,mtx31=0.000000,mtx32=0.000000,mtx33=0.000000,mtx34=0.000000,mtx35=0.000000,mtx36=0.000000,mtx37=0.000000,mtx38=0.000000,mtx39=0.000000,lat_work_queue_time=0.000000,lat_msg_queue_time=0.000000,lat_cc_block_time=0.000000,lat_cc_time=0.000000,lat_process_time=0.000000,lat_abort_time=0.000000,lat_network_time=0.000000,lat_other_time=0.000000,lat_l_loc_work_queue_time=0.000008,lat_l_loc_msg_queue_time=0.066655,lat_l_loc_cc_block_time=0.000000,lat_l_loc_cc_time=0.000001,lat_l_loc_process_time=0.000012,lat_l_loc_abort_time=0.000000,lat_short_work_queue_time=0.000021,lat_short_msg_queue_time=0.066682,lat_short_cc_block_time=0.000000,lat_short_cc_time=0.000004,lat_short_process_time=0.000023,lat_short_network_time=0.067712,lat_short_batch_time=0.000000,lat_s_loc_work_queue_time=0.000008,lat_s_loc_msg_queue_time=0.066655,lat_s_loc_cc_block_time=0.000000,lat_s_loc_cc_time=0.000001,lat_s_loc_process_time=0.000012,lat_l_rem_work_queue_time=0.000005,lat_l_rem_msg_queue_time=0.000004,lat_l_rem_cc_block_time=0.000000,lat_l_rem_cc_time=0.000001,lat_l_rem_process_time=0.000005,lat_s_rem_work_queue_time=0.000000,lat_s_rem_msg_queue_time=0.000000,lat_s_rem_cc_block_time=0.000000,lat_s_rem_cc_time=0.000000,lat_s_rem_process_time=0.000000,virt_mem_usage=444184,phys_mem_usage=311504,cpu_ttl=0.000272
+
+FINISH 3:7
+FINISH 3:3
+FINISH 3:2
+FINISH 3:4
+FINISH 3:10
+FINISH 3:6
+FINISH 3:5
+FINISH 3:1
+FINISH 3:8
+FINISH 3:11
+FINISH 3:9
+FINISH 3:0
+PASS! SimTime = 20.849432
+[summary] total_runtime=10.000000,tput=1052.799982,txn_cnt=10528,remote_txn_cnt=0,local_txn_cnt=0,local_txn_start_cnt=10588,total_txn_commit_cnt=30125,local_txn_commit_cnt=10528,remote_txn_commit_cnt=19597,total_txn_abort_cnt=0,unique_txn_abort_cnt=0,local_txn_abort_cnt=0,remote_txn_abort_cnt=0,txn_run_time=1261.936971,txn_run_avg_time=0.119865,multi_part_txn_cnt=10527,multi_part_txn_run_time=1261.936959,multi_part_txn_avg_time=0.119876,single_part_txn_cnt=1,single_part_txn_run_time=0.000012,single_part_txn_avg_time=0.000012,txn_write_cnt=0,record_write_cnt=0,parts_touched=39802,avg_parts_touched=3.780585,ts_alloc_time=0.001592,abort_time=0.000000,txn_manager_time=0.073634,txn_index_time=0.005211,txn_validate_time=0.000000,txn_cleanup_time=0.019080,txn_total_process_time=0.170957,txn_process_time=0.170957,txn_total_local_wait_time=0.000000,txn_local_wait_time=0.000000,txn_total_remote_wait_time=1261.719527,txn_remote_wait_time=1261.719527,txn_total_twopc_time=0.000000,txn_twopc_time=0.000000,txn_total_process_time_avg=0.000016,txn_process_time_avg=0.000016,txn_total_local_wait_time_avg=0.000000,txn_local_wait_time_avg=0.000000,txn_total_remote_wait_time_avg=0.119844,txn_remote_wait_time_avg=0.119844,txn_total_twopc_time_avg=0.000000,txn_twopc_time_avg=0.000000,abort_queue_enqueue_cnt=0,abort_queue_dequeue_cnt=0,abort_queue_enqueue_time=0.000000,abort_queue_dequeue_time=0.000000,abort_queue_penalty=0.000000,abort_queue_penalty_extra=0.000000,abort_queue_penalty_avg=0.000000,abort_queue_penalty_extra_avg=0.000000,work_queue_wait_time=3.896924,work_queue_cnt=164287,work_queue_enq_cnt=164287,work_queue_wait_avg_time=0.000024,work_queue_mtx_wait_time=0.000000,work_queue_mtx_wait_avg=0.000000,work_queue_new_cnt=10588,work_queue_new_wait_time=0.381983,work_queue_new_wait_avg_time=0.000036,work_queue_old_cnt=153699,work_queue_old_wait_time=3.514941,work_queue_old_wait_avg_time=0.000023,work_queue_enqueue_time=0.131440,work_queue_dequeue_time=0.160228,work_queue_conflict_cnt=41786,worker_idle_time=26.451548,worker_activate_txn_time=0.009093,worker_deactivate_txn_time=0.004156,worker_release_msg_time=0.007079,worker_process_time=0.493658,worker_process_cnt=122502,worker_process_avg_time=0.000004,proc_cnt_type0=0,proc_time_type0=0.000000,proc_cnt_type1=0,proc_time_type1=0.000000,proc_cnt_type2=0,proc_time_type2=0.000000,proc_cnt_type3=10588,proc_time_type3=0.066212,proc_cnt_type4=36979,proc_time_type4=0.100096,proc_cnt_type5=0,proc_time_type5=0.000000,proc_cnt_type6=19597,proc_time_type6=0.075304,proc_cnt_type7=0,proc_time_type7=0.000000,proc_cnt_type8=0,proc_time_type8=0.000000,proc_cnt_type9=55338,proc_time_type9=0.252046,proc_cnt_type10=0,proc_time_type10=0.000000,proc_cnt_type11=0,proc_time_type11=0.000000,proc_cnt_type12=0,proc_time_type12=0.000000,proc_cnt_type13=0,proc_time_type13=0.000000,proc_cnt_type14=0,proc_time_type14=0.000000,proc_cnt_type15=0,proc_time_type15=0.000000,proc_cnt_type16=0,proc_time_type16=0.000000,proc_cnt_type17=0,proc_time_type17=0.000000,proc_cnt_type18=0,proc_time_type18=0.000000,proc_cnt_type19=0,proc_time_type19=0.000000,proc_cnt_type20=0,proc_time_type20=0.000000,proc_cnt_type21=0,proc_time_type21=0.000000,proc_cnt_type22=0,proc_time_type22=0.000000,proc_cnt_type23=0,proc_time_type23=0.000000,proc_cnt_type24=0,proc_time_type24=0.000000,msg_queue_delay_time=0.435597,msg_queue_cnt=132179,msg_queue_enq_cnt=132179,msg_queue_delay_time_avg=0.000003,msg_send_time=0.935670,msg_send_time_avg=0.000007,msg_recv_time=1.591218,msg_recv_time_avg=0.000013,msg_recv_idle_time=37.863214,msg_batch_cnt=132180,msg_batch_size_msgs=132180,msg_batch_size_msgs_avg=1.000000,msg_batch_size_bytes=14835130,msg_batch_size_bytes_avg=112.000000,msg_batch_size_bytes_to_server=13824442,msg_batch_size_bytes_to_client=1010688,msg_send_cnt=132180,msg_recv_cnt=122501,msg_unpack_time=0.111315,msg_unpack_time_avg=0.000001,mbuf_send_intv_time=0.013150,mbuf_send_intv_time_avg=0.000000,msg_copy_output_time=0.022775,cc_conflict_cnt=0,txn_wait_cnt=0,txn_conflict_cnt=0,twopl_already_owned_cnt=0,twopl_owned_cnt=0,twopl_sh_owned_cnt=0,twopl_ex_owned_cnt=0,twopl_sh_bypass_cnt=0,twopl_owned_time=0.000000,twopl_sh_owned_time=0.000000,twopl_ex_owned_time=0.000000,twopl_sh_owned_avg_time=0.000000,twopl_ex_owned_avg_time=0.000000,twopl_diff_time=0.000000,twopl_wait_time=0.000000,twopl_getlock_cnt=0,twopl_getlock_time=0.000000,twopl_release_cnt=0,twopl_release_time=0.000000,seq_txn_cnt=0,seq_batch_cnt=0,seq_full_batch_cnt=0,seq_ack_time=0.000000,seq_batch_time=0.000000,seq_process_cnt=0,seq_complete_cnt=0,seq_process_time=0.000000,seq_prep_time=0.000000,seq_idle_time=0.000000,seq_queue_wait_time=0.000000,seq_queue_cnt=0,seq_queue_enq_cnt=0,seq_queue_wait_avg_time=0.000000,seq_queue_enqueue_time=0.000000,seq_queue_dequeue_time=0.000000,sched_queue_wait_time=0.000000,sched_queue_cnt=0,sched_queue_enq_cnt=0,sched_queue_wait_avg_time=0.000000,sched_queue_enqueue_time=0.000000,sched_queue_dequeue_time=0.000000,calvin_sched_time=0.000000,sched_idle_time=0.000000,sched_txn_table_time=0.000000,sched_epoch_cnt=0,sched_epoch_diff=0.000000,occ_validate_time=0.000000,occ_cs_wait_time=0.000000,occ_cs_time=0.000000,occ_hist_validate_time=0.000000,occ_act_validate_time=0.000000,occ_hist_validate_fail_time=0.000000,occ_act_validate_fail_time=0.000000,occ_check_cnt=0,occ_abort_check_cnt=0,occ_ts_abort_cnt=0,occ_finish_time=0.000000,maat_validate_cnt=0,maat_validate_time=0.000000,maat_validate_avg=0.000000,maat_cs_wait_time=0.000000,maat_cs_wait_avg=0.000000,maat_case1_cnt=0,maat_case2_cnt=0,maat_case3_cnt=0,maat_case4_cnt=0,maat_case5_cnt=0,maat_range=0.000000,maat_commit_cnt=0,maat_commit_avg=0,maat_range_avg=0.000000,log_write_cnt=0,log_write_time=0.000000,log_write_avg_time=0.000000,log_flush_cnt=0,log_flush_time=0.000000,log_flush_avg_time=0.000000,log_process_time=0.000000,txn_table_new_cnt=30183,txn_table_get_cnt=164288,txn_table_release_cnt=30125,txn_table_cflt_cnt=30067,txn_table_cflt_size=136672,txn_table_get_time=0.191532,txn_table_release_time=0.093395,txn_table_min_ts_time=0.000000,txn_table_get_avg_time=0.000001,txn_table_release_avg_time=0.000003,mtx0=0.020885,mtx1=0.040469,mtx2=0.000000,mtx3=0.126647,mtx4=13.081243,mtx5=2.373501,mtx6=0.000000,mtx7=0.078696,mtx8=0.001443,mtx9=33.590476,mtx10=1.132113,mtx11=10.414858,mtx12=0.952574,mtx13=0.113702,mtx14=27.488195,mtx15=0.010461,mtx16=0.010251,mtx17=0.000000,mtx18=0.000000,mtx19=0.000000,mtx20=0.046980,mtx21=0.011286,mtx22=0.040437,mtx23=0.001617,mtx24=0.001351,mtx25=0.002435,mtx26=0.074886,mtx27=0.011322,mtx28=39.691527,mtx29=0.151934,mtx30=0.000000,mtx31=0.000000,mtx32=0.000000,mtx33=0.000000,mtx34=0.000000,mtx35=0.000000,mtx36=0.000000,mtx37=0.000000,mtx38=0.000000,mtx39=0.000000,lat_work_queue_time=0.000000,lat_msg_queue_time=0.000000,lat_cc_block_time=0.000000,lat_cc_time=0.000000,lat_process_time=0.000000,lat_abort_time=0.000000,lat_network_time=0.000000,lat_other_time=0.000000,lat_l_loc_work_queue_time=1.273959,lat_l_loc_msg_queue_time=511.880924,lat_l_loc_cc_block_time=0.000000,lat_l_loc_cc_time=0.010541,lat_l_loc_process_time=0.170957,lat_l_loc_abort_time=0.000000,lat_short_work_queue_time=26.466371,lat_short_msg_queue_time=512.266353,lat_short_cc_block_time=0.000000,lat_short_cc_time=0.163987,lat_short_process_time=0.780472,lat_short_network_time=748.153566,lat_short_batch_time=0.000000,lat_s_loc_work_queue_time=1.273959,lat_s_loc_msg_queue_time=511.880924,lat_s_loc_cc_block_time=0.000000,lat_s_loc_cc_time=0.010541,lat_s_loc_process_time=0.170957,lat_l_rem_work_queue_time=2.240940,lat_l_rem_msg_queue_time=264.726647,lat_l_rem_cc_block_time=0.000000,lat_l_rem_cc_time=0.014474,lat_l_rem_process_time=0.064181,lat_s_rem_work_queue_time=0.000000,lat_s_rem_msg_queue_time=0.000000,lat_s_rem_cc_block_time=0.000000,lat_s_rem_cc_time=0.000000,lat_s_rem_process_time=0.000000,fscl0=0.000012,fscl1=0.004380,fscl10=0.025465,fscl25=0.053915,fscl50=0.100129,fscl75=0.165582,fscl90=0.241107,fscl95=0.295610,fscl96=0.309785,fscl97=0.329727,fscl98=0.351020,fscl99=0.390526,fscl100=0.591472,fscl_avg=0.119865,fscl_cnt=10528,lscl0=0.000012,lscl1=0.004380,lscl10=0.025465,lscl25=0.053915,lscl50=0.100129,lscl75=0.165582,lscl90=0.241107,lscl95=0.295610,lscl96=0.309785,lscl97=0.329727,lscl98=0.351020,lscl99=0.390526,lscl100=0.591472,lscl_avg=0.119865,lscl_cnt=10528,sacl0=0.000012,sacl1=0.004380,sacl10=0.025465,sacl25=0.053915,sacl50=0.100129,sacl75=0.165582,sacl90=0.241107,sacl95=0.295610,sacl96=0.309785,sacl97=0.329727,sacl98=0.351020,sacl99=0.390526,sacl100=0.591472,sacl_avg=0.119865,sacl_cnt=10528,virt_mem_usage=394996,phys_mem_usage=332076,cpu_ttl=91.823431
+
+
